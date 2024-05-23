@@ -11,6 +11,7 @@ services:
         env_file:
             - .env
         environment:
+            STAGE: ${STAGE}
             ERROR_LOG: stdout
             ACCESS_LOG: stderr
             RESOLVER: 127.0.0.11
